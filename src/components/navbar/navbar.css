@@ -1,0 +1,17 @@
+.ContainerNavBar{
+    height: 10vh;
+    width: 100vw;
+
+    background-color: gray;
+}
+
+.RightItemsNavbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.ButtonsGroupNavBar{
+    width: 35vw;
+    display: flex;
+}

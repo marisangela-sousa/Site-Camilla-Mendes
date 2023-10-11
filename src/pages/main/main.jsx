@@ -1,9 +1,9 @@
-import ButtonAbout from "../../components/button/about/button-about"
+import NavBar from "../../components/navbar/navbar"
 
 const Main = () =>{
     return(
         <div>
-            <ButtonAbout/>
+            <NavBar/>
         </div>
     )
 }

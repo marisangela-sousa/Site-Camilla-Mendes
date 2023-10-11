@@ -1,0 +1,18 @@
+import ButtonHeader from "../buttonHeader/buttonHeader"
+import "./navbar.css"
+
+const NavBar = () => {
+    return (
+        <div className="ContainerNavBar" >
+            <div className="RightItemsNavbar">
+                <div className="ButtonsGroupNavBar">
+                    <ButtonHeader ButtonHeaderName="ABOUT" />
+                    <ButtonHeader ButtonHeaderName="BLOG" />
+                    <ButtonHeader ButtonHeaderName="CONTACT" />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default NavBar
