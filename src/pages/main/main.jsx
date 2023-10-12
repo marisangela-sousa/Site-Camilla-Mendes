@@ -1,9 +1,9 @@
-import NavBar from "../../components/navbar/navbar"
+import AboutPage from "../about/about"
 
 const Main = () =>{
     return(
         <div>
-            <NavBar/>
+            <AboutPage/>
         </div>
     )
 }

@@ -1,0 +1,16 @@
+.ContentAboutPage{
+    display: flex;
+    box-sizing: border-box;
+    
+    padding-right: 4%;
+    margin-top: 2%;
+}
+
+#ImgAboutPage{
+    height: 86vh;
+}
+
+.TextAbout{
+    width: 40%;
+    margin: 0 auto 0 auto;
+}
