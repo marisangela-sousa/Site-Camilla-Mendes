@@ -13,10 +13,11 @@
     font-size: 24px;
     font-weight: bold;
     color: #2A2B3F;
+    cursor: pointer;
 }
 
 .ButtonsGroupNavBar{
     width: 35vw;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
