@@ -3,11 +3,13 @@
     height: 49px;
     border: none;
     background-color: #2A2B3F;
-    margin: 7.5px;
+    margin: 7.5px 0 7.5px 15px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .ButtonHeaderText{
