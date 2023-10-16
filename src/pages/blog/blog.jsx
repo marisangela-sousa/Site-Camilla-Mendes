@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
@@ -9,10 +11,22 @@ import "../../assets/styles/styles.css"
 import "./blog.css"
 
 const BlogPage = () => {
+    const carousel = useRef(null)
+
+    const HandleLeftClick = (e) => {
+        e.preventDefault()
+        carousel.current.scrollLeft -= carousel.current.offsetWidth
+    }
+
+    const HandleRightClick = (e) => {
+        e.preventDefault()
+        carousel.current.scrollLeft += carousel.current.offsetWidth
+    }
+
     return (
         <div className="BlogPageContainer">
-            <ArrowBackIosIcon sx={{ fontSize: "50px" }} />
-            <div className="PagesSlider">
+            <button className="Button" onClick={HandleLeftClick}><ArrowBackIosIcon sx={{ fontSize: "50px" }} /></button>
+            <div className="PagesSlider" ref={carousel}>
                 <div className="ContentCover">
                     <img className="CoverImage" src={img1blogpage} alt="A chinese woman with a umbrella" />
                     <div className="TextInsideImage"> <p>JAPAO</p></div>
@@ -27,8 +41,18 @@ const BlogPage = () => {
                     <img className="CoverImage" src={img3blogpage} alt="" />
                     <div className="TextInsideImage"><p>ORLANDO</p></div>
                 </div>
+
+                <div className="ContentCover">
+                    <img className="CoverImage" src={img3blogpage} alt="" />
+                    <div className="TextInsideImage"><p>ORLANDO</p></div>
+                </div>
+
+                <div className="ContentCover">
+                    <img className="CoverImage" src={img3blogpage} alt="" />
+                    <div className="TextInsideImage"><p>ORLANDO</p></div>
+                </div>
             </div>
-            <ArrowForwardIosIcon sx={{ fontSize: "50px" }} />
+            <button className="Button" onClick={HandleRightClick}><ArrowForwardIosIcon sx={{ fontSize: "50px" }} /></button>
         </div>
     )
 }

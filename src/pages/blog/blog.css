@@ -14,19 +14,32 @@
     align-items: center;
 }
 
+.Button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .PagesSlider {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    margin: auto;
+    margin: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.PagesSlider::-webkit-scrollbar{
+    display: none;
 }
 
 .ContentCover {
-    width: 25vw;
+    width: 400px;
+    margin: 10px;
     position: relative;
     text-align: center;
     cursor: pointer;
+    flex: none;
 }
 
 .CoverImage {
