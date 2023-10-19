@@ -1,10 +1,12 @@
+import "./content.css"
+
 const ContentPage = ({isOpen, onClose, children}) => {
     return (
-        <div>
+        <div >
             {isOpen ? (
-                <div>
-                    <button onClick={onClose}>X</button>
-                    <div>
+                <div className="ContentPageContainer">
+                    <button className="CloseContent" onClick={onClose}>X</button>
+                    <div className="ContentContainer">
                         Conteudo
                         {children}
                     </div>
