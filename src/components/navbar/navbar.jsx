@@ -11,7 +11,7 @@ const NavBar = () => {
             <div className="ButtonsGroupNavBar">
                 <Link to={"/"} style={ButtonDecoration} ><ButtonHeader ButtonHeaderName="ABOUT" /></Link>
                 <Link to={"/blog"} style={ButtonDecoration}><ButtonHeader to="/blog" ButtonHeaderName="BLOG" /></Link>
-                <Link><ButtonHeader ButtonHeaderName="CONTACT" /></Link>
+                <Link to={"/contact"} style={ButtonDecoration} ><ButtonHeader ButtonHeaderName="CONTACT" /></Link>
             </div>
         </div>
     )
