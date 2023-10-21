@@ -31,33 +31,33 @@ const BlogPage = () => {
         <div className="BlogPageContainer">
             <button className="Button" onClick={HandleLeftClick}><ArrowBackIosIcon sx={{ fontSize: "50px" }} /></button>
             <div className="PagesSlider" ref={carousel}>
-                <div className="ContentCover" onClick={()=>setIsContentOpen(!isContentOpen)} >
+                <div className="ContentCover" onClick={() => setIsContentOpen(!isContentOpen)} >
                     <img className="CoverImage" src={img1blogpage} alt="A chinese woman with a umbrella" />
                     <div className="TextInsideImage"> <p>JAPAO</p></div>
                 </div>
 
-                <div className="ContentCover" >
+                <div className="ContentCover" onClick={() => setIsContentOpen(!isContentOpen)}>
                     <img className="CoverImage" src={img2blogpage} alt="" />
                     <div className="TextInsideImage"><p>PARIS</p></div>
                 </div>
 
-                <div className="ContentCover">
+                <div className="ContentCover" onClick={() => setIsContentOpen(!isContentOpen)}>
                     <img className="CoverImage" src={img3blogpage} alt="" />
-                    <div className="TextInsideImage"><p>ORLANDO</p></div>
+                    <div className="TextInsideImage"><p>DISNEY</p></div>
                 </div>
 
-                <div className="ContentCover">
-                    <img className="CoverImage" src={img3blogpage} alt="" />
-                    <div className="TextInsideImage"><p>ORLANDO</p></div>
+                <div className="ContentCover" onClick={() => setIsContentOpen(!isContentOpen)}>
+                    <div className="CoverImage" style={{ backgroundColor: "black" }}></div>
+                    <div className="TextInsideImage"><p>NOME</p></div>
                 </div>
 
-                <div className="ContentCover">
-                    <img className="CoverImage" src={img3blogpage} alt="" />
-                    <div className="TextInsideImage"><p>ORLANDO</p></div>
+                <div className="ContentCover" onClick={() => setIsContentOpen(!isContentOpen)}>
+                    <div className="CoverImage" style={{ backgroundColor: "black" }}></div>
+                    <div className="TextInsideImage"><p>NOME</p></div>
                 </div>
             </div>
             <button className="Button" onClick={HandleRightClick}><ArrowForwardIosIcon sx={{ fontSize: "50px" }} /></button>
-            <ContentPage isOpen={isContentOpen} onClose={()=>setIsContentOpen(!isContentOpen)}/>
+            <ContentPage isOpen={isContentOpen} onClose={() => setIsContentOpen(!isContentOpen)} />
         </div>
     )
 }
